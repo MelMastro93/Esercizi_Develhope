@@ -1,0 +1,47 @@
+<!--Stampa in ordine in console:
+
+l'elemento padre di ul.
+il secondo elemento figlio di ul.
+l'elemento fratello successivo del secondo li.
+l'elemento fratello precedente del secondo li.
+Il tutto utilizzando tutte e 4 le proprietà viste nel video.-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <script>
+        //cercare l' elemento padre ul
+        const ulParent = document.querySelector('ul').parentElement;
+        console.log("l'elemento padre di ul è", ulParent);
+
+
+        //Secondo elemento figlio di ul
+        const secondChild = document.querySelector('ul').children[1];
+        console.log("il secondo elemento figlio di ul è:", secondChild)
+
+        //l'elemento fratello successivo del secondo li.
+        const nextSibling = secondChild.nextElementSibling;
+        console.log("l'elemento fratello successivo del secondo li è:", nextSibling)
+        
+        //l'elemento fratello precedente del secondo li.
+        const previousSibling = secondChild.previousElementSibling;
+        console.log("L' elemento fratello precedente del secondo li è:", previousSibling)
+
+    </script>
+</body>
+
+</html>
